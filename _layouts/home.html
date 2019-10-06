@@ -38,11 +38,17 @@
           </div>
         {% endunless %}
 
-        {% include projects.html %}
+        {% include works.html %}
 
         {% if site.topics %}
           {% include interests.html %}
         {% endif %}
+
+        {% if site.books %}
+          {% include books.html %}
+        {% endif %}
+
+        {% include projects.html %}
 
         {% unless posts_total == 0 %}
           {% include thoughts.html %}
