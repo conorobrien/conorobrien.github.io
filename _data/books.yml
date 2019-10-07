@@ -1,0 +1,43 @@
+display: 10
+
+read:
+  - title: "Ever Since Darwin"
+    author: "Stephen Jay Gould"
+    image_url: /assets/books/Ever_Since_Darwin.jpg
+
+  - title: "The Panda's Thumb"
+    author: "Stephen Jay Gould"
+    image_url: /assets/books/The_Panda's_Thumb.jpg
+
+  - title: "The Big Short"
+    author: "Michael Lewis"
+    image_url: /assets/books/The_Big_Short.jpg
+
+  - title: "The Art of Innovation"
+    author: "Tom Kelley"
+    image_url: /assets/books/The_Art_of_Innovation.jpg
+
+  - title: "Good Omens"
+    author: "Terry Pratchett, Neil Gaiman"
+    image_url: /assets/books/Good_Omens.jpg
+
+  - title: "Notes of a Native Son"
+    author: "James Baldwin"
+    image_url: /assets/books/Notes_of_a_Native_Son.jpg
+
+  - title: "Giovanni's Room"
+    author: "James Baldwin"
+    image_url: /assets/books/Giovanni's_Room.jpg
+
+  - title: "Systemantics"
+    author: "John Gall"
+    image_url: /assets/books/Systemantics.jpg
+
+  - title: "How to Lie with Statistics"
+    author: "Darell Huff"
+    image_url: /assets/books/How_to_Lie_with_Statistics.jpg
+
+  - title: "A Budget of Paradoxes"
+    author: "Darell Huff"
+    image_url: /assets/books/A_Budget_of_Paradoxes.jpg
+

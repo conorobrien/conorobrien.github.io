@@ -1,0 +1,15 @@
+- name: Julia
+  web_url: https://github.com/JuliaLang/julia
+  image_url: /assets/interests/JuliaLogo.png
+
+- name: Rust
+  web_url: https://www.rust-lang.org/
+  image_url: https://www.rust-lang.org/static/images/rust-logo-blk.svg
+
+- name: Nannou
+  web_url: https://nannou.cc/
+  image_url: https://raw.githubusercontent.com/nannou-org/nannou/master/assets/images/logo.png
+
+- name: ROS
+  web_url: https://github.com/ros/ros
+  image_url: https://avatars3.githubusercontent.com/u/547448?s=200&v=4

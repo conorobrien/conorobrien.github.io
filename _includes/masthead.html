@@ -4,10 +4,10 @@
   {% assign metadata_styles = 'd-flex flex-items-center mb-3' %}
 {% endif %}
 
-<img src="/assets/profile.png" class="circle mb-3" style="max-width: 150px;">
-<h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed"> Conor O'Brien </h1>
+<img src={{site.data.user.profile}} class="circle mb-3" style="max-width: 200px;">
+<h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed"> {{ site.data.user.name }} </h1>
 <p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
-  Mechanical engineer with expertise designing unusual mechatronic prototypes
+  {{ site.data.user.bio }}
 </p>
 
 {% if include.metadata %}
