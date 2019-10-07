@@ -1,7 +1,7 @@
 ---
-name: "Snapwings"
+name: "Frank"
 image_url: "/assets/works/Snapwing1.jpg"
-description: "Small glider for DARPA-funded project"
+description: "Frank the Frankenstein Quadrotor"
 published: true
 layout: default
 ---

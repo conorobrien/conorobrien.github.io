@@ -1,14 +1,5 @@
-<a href="{{ work.url }}" class="github-component position-relative height-full no-underline d-flex flex-column flex-justify-center text-center border border-gray-light rounded-1 bg-white p-5">
-  {% if work.image_url %}
-    <img src="{{ work.image_url }}" width="192" height="192" class="mx-auto rounded-1 mb-3" alt="{{ work.name }}">
-  {% else %}
-    <div
-      class="bg-blue-light f4 text-gray-light text-bold rounded-1 flex-shrink-0 text-center mx-auto mb-3"
-      style="width:64px; height:64px; line-height:64px;"
-    >
-      #
-    </div>
-  {% endif %}
+<a href="{{ work.url }}" class="github-component position-relative height-full no-underline wrap d-flex flex-column flex-justify-start text-center border border-gray-light rounded-1 bg-white p-5">
+  <img src="{{ work.image_url }}" style="max-width: 100%" class="mx-auto mb-auto" alt="{{ work.name }}">
   <p class="f3 lh-condensed text-center link-gray-dark mb-0 mt-1">{{ work.name }}</p>
   {% if work.description %}
     <p class="f5 text-gray text-center mb-0 mt-1">{{ work.description }}</p>

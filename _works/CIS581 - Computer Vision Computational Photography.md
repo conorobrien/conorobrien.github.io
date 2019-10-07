@@ -1,7 +1,7 @@
 ---
-name: "Snapwings"
+name: "CIS581"
 image_url: "/assets/works/Snapwing1.jpg"
-description: "Small glider for DARPA-funded project"
+description: "Computer vision class examples"
 published: true
 layout: default
 ---

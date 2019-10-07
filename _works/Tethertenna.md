@@ -1,7 +1,7 @@
 ---
-name: "Snapwings"
+name: "Tethertenna"
 image_url: "/assets/works/Snapwing1.jpg"
-description: "Small glider for DARPA-funded project"
+description: "Long-endurance heavy-lift tethered helicopterdrone"
 published: true
 layout: default
 ---
