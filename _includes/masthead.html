@@ -1,12 +1,8 @@
-{% if site.layout == 'stacked' %}
-  {% assign metadata_styles = 'd-md-inline-block mx-3 mb-1 mb-md-0' %}
-{% else %}
-  {% assign metadata_styles = 'd-flex flex-items-center mb-3' %}
-{% endif %}
+{% assign metadata_styles = 'd-flex flex-items-center mb-3' %}
 
-<img src={{site.data.user.profile}} class="circle mb-3" style="max-width: 200px;">
-<h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed"> {{ site.data.user.name }} </h1>
-<p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
+<img src={{site.data.user.profile}} class="circle mb-3" style="max-width: 300px;">
+<h1 class="text-white mb-2 lh-condensed"> {{ site.data.user.name }} </h1>
+<p class="mb-3 f4" style="color: #e1e4e8;">
   {{ site.data.user.bio }}
 </p>
 
@@ -15,7 +11,7 @@
     {% if user.name %}
       <div class="{{ metadata_styles }}">
         {% octicon mark-github height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:GitHub %}
-        <a href="https://github.com/{{ user.login }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+        <a href="https://github.com/{{ user.login }}">
           @{{ user.login }}
         </a>
       </div>
@@ -23,13 +19,13 @@
     {% if user.email %}
       <div class="{{ metadata_styles }}">
         {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
-        <a href="mailto:{{ user.email }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+        <a href="mailto:{{ user.email }}">
           {{ user.email }}
         </a>
       </div>
     {% endif %}
     {% if user.location %}
-      <div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">
+      <div class="{{ metadata_styles }}">
         {% octicon location height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Location %}
         {{ user.location }}
       </div>
