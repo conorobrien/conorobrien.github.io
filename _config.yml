@@ -37,3 +37,5 @@ social_media:
 collections:
   works:
     output: true
+  resume:
+    output: true
