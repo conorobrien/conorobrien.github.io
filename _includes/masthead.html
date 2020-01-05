@@ -1,4 +1,5 @@
-{% assign metadata_styles = 'd-flex flex-items-center mb-3' %}
+{% assign metadata_styles = 'd-flex flex-items-center mb-3 text-white' %}
+{% assign masthead_icon_color = "#f6f8fa" %}
 
 <img src={{site.data.user.profile}} class="circle mb-3 img-fluid" style="width:90%; max-width:300px">
 <h1 class="text-white mb-2 justify-content-center lh-condensed"> {{ site.data.user.name }} </h1>
@@ -10,23 +11,23 @@
   <div class="f4 mb-6">
     {% if user.name %}
       <div class="{{ metadata_styles }}">
-        {% octicon mark-github height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:GitHub %}
-        <a href="https://github.com/{{ user.login }}">
+        {% octicon mark-github height:20 class:"mr-2 v-align-middle" fill:{{ masthead_icon_color }} aria-label:GitHub %}
+        <a href="https://github.com/{{ user.login }}" class="text-white">
           @{{ user.login }}
         </a>
       </div>
     {% endif %}
     {% if user.email %}
       <div class="{{ metadata_styles }}">
-        {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
-        <a href="mailto:{{ user.email }}">
+        {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ masthead_icon_color }} aria-label:email %}
+        <a href="mailto:{{ user.email }}" class="text-white">
           {{ user.email }}
         </a>
       </div>
     {% endif %}
     {% if user.location %}
       <div class="{{ metadata_styles }}">
-        {% octicon location height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Location %}
+        {% octicon location height:20 class:"mr-2 v-align-middle" fill:{{ masthead_icon_color }} aria-label:Location %}
         {{ user.location }}
       </div>
     {% endif %}
