@@ -2,7 +2,7 @@ html, body {
   background: white !important;
   color: #333333;
   font-family: 'Georgia', serif;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.2;
   margin: 1em auto 10em auto;
   max-width: 7.5in !important;
@@ -53,6 +53,7 @@ table {
 @media print{
   html, body {
     margin: 0 auto;
+    font-size:12px;
   }
 
   @page {
