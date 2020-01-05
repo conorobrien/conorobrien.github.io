@@ -30,11 +30,8 @@ projects:
     # - repo-name
 
 social_media:
-  instagram: cobrien012
   linkedin: conoreobrien
 
 collections:
   works:
     output: true
-
-host: 0.0.0.0
