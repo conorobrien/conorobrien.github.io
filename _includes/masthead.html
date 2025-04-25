@@ -1,0 +1,28 @@
+<section>
+    <div style="display: flex; flex-wrap: wrap; gap: 1em">
+        <div>
+            {% octicon mail height:15 fill:currentColor aria-label:email %}
+            <a href="mailto:{{ site.email }}"> {{ site.email }} </a>
+        </div>
+
+        <div>
+            {% octicon location height:15 fill:currentColor
+            aria-label:Location%} San Francisco, CA
+        </div>
+
+        <div>
+            {% octicon book height:15 fill:currentColor aria-label:Resume %}
+            <a href="{% link ConorOBrienResume.html %}"> Resume </a>
+        </div>
+
+        <div>
+            {{ site.data.social_media.linkedin.icon_svg }}
+            <a href="https://www.linkedin.com/in/conoreobrien/"> LinkedIn </a>
+        </div>
+        <div>
+            {% octicon mark-github height:15 fill:currentColor aria-label:GitHub
+            %}
+            <a href="https://github.com/conorobrien"> @conorobrien </a>
+        </div>
+    </div>
+</section>
