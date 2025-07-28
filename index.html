@@ -4,42 +4,42 @@ layout: null
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Conor O'Brien</title>
-        <link rel="stylesheet" href="assets/css/tufte.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <title>Conor O'Brien</title>
+    <link rel="stylesheet" href="assets/css/tufte.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
 
-    <body>
-        <article>
-            <!-- Header, socials, & bio -->
-            <h1 id="tufte-css"> Conor O'Brien </h1>
-            <p class="subtitle"> Mechatronics Engineer </p>
+<body>
+    <article>
+        <!-- Header, socials, & bio -->
+        <h1 id="tufte-css"> Conor O'Brien </h1>
+        <p class="subtitle"> Mechatronics Engineer </p>
 
-            {% include masthead.html %}
+        {% include masthead.html %}
 
-            <section>
-                {% capture bio %}{% include bio.md %}{% endcapture %}
-                {{ bio | markdownify }}
-            </section>
+        <section>
+            {% capture bio %}{% include bio.md %}{% endcapture %}
+            {{ bio | markdownify }}
+        </section>
 
-            <section>
-                <h2 id="work"> Previous Work <h2>
-                    {% for w in site.work reversed %}
-                    <h3> {{w.name}}</h3>
-                    <figure>
-                        <label for="mn-exports-imports" class="margin-toggle">&#8853;</label>
-                        <input type="checkbox" id="mn-exports-imports" class="margin-toggle"/>
-                        <span class="marginnote">
-                            {{w.caption}}
-                        </span>
-                        <img src= {{w.image}} alt= {{w.caption}} />
-                    </figure>
-                    {{ w.content}}
-                    {% endfor %}
+        <section>
+            <h2 id="work"> Previous Work <h2>
+                {% for w in site.work reversed %}
+                <h3> {{w.name}}</h3>
+                <figure>
+                    <!-- <label for="mn-exports-imports" class="margin-toggle">&#8853;</label> -->
+                    <input type="checkbox" id="mn-exports-imports" class="margin-toggle"/>
+                    <span class="marginnote">
+                        {{w.caption}}
+                    </span>
+                    <img src= {{w.image}} alt= {{w.caption}} />
+                </figure>
+                {{ w.content}}
+                {% endfor %}
             </section>
 
         </article>
     </body>
-</html>
+    </html>
