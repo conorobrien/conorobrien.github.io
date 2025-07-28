@@ -1,0 +1,76 @@
+html, body {
+  background: white;
+  color: #333333;
+  font-family: 'Georgia', serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  margin: 1em auto 10em auto;
+  max-width: 7.5in;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  border-bottom: 0.05em solid #111;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-weight: normal;
+  line-height: 1.75em;
+  line-height:100%;
+  margin-top: 0;
+  margin: 0.25em;
+  padding-top: 0;
+  text-align: center;
+}
+
+h2 {
+  border-bottom: 0.05em solid #111;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-weight: normal;
+  line-height: 1.5em;
+  margin: 0.25em;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 0.25em;
+}
+
+ul, ol {
+  list-style-type: disc;
+  margin: 0.1em;
+  padding: 0 0 0 2em;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 auto;
+  table-layout: auto;
+  white-space: nowrap;
+  width: 100%;
+}
+
+@media print{
+  html, body {
+    margin: 0 auto;
+    font-size:12px;
+  }
+
+  @page {
+    page-break-after: auto;
+    margin: 0.2in auto;
+    size: letter;
+  }
+
+  @page:first {
+    margin-top:0.25in;
+  }
+}
